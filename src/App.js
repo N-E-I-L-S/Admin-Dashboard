@@ -6,6 +6,9 @@ import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
 import './App.css'
+import Bar from './pages/BarPage';
+import Piepage from './pages/PiePage';
+import LinePage from './pages/LinePage';
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -21,6 +24,9 @@ function App() {
       <Topbar setIsSidebar={setIsSidebar} />
       <Routes>
         <Route path='/' element={<Dashboard/>}/>
+        <Route path='/bar' element={<Bar/>}/>
+        <Route path='/pie' element={<Piepage/>}/>
+        <Route path='/line' element={<LinePage/>}/>
       </Routes>
       </main>
       </div>

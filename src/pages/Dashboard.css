@@ -1,0 +1,5 @@
+.bar, .pie, .line{
+    display: flex;
+    height: 100vh;
+}
+
