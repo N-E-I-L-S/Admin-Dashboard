@@ -9,6 +9,9 @@ import './App.css'
 import Bar from './pages/BarPage';
 import Piepage from './pages/PiePage';
 import LinePage from './pages/LinePage';
+import Calendar from './pages/Calender';
+import Form from './pages/FormPage';
+import FAQ from './pages/Faq';
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -27,6 +30,9 @@ function App() {
         <Route path='/bar' element={<Bar/>}/>
         <Route path='/pie' element={<Piepage/>}/>
         <Route path='/line' element={<LinePage/>}/>
+        <Route path='/form' element={<Form/>}/>
+        <Route path='/faq' element={<FAQ/>}/>
+        <Route path='/calendar' element={<Calendar/>}/>
       </Routes>
       </main>
       </div>
